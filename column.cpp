@@ -34,6 +34,18 @@ cout<<setw(10)<<cc<<endl;
 cout<<aaa;
 cout<<setw(10)<<bbb;
 cout<<setw(10)<<ccc<<endl;
+    
+    
+    //*******************************
+        
+        //or
+ cout<<"Integer"<<"\t"<< "Float"<<"\t"<< "Double" <<"\n";
+ cout<<a<<"\t"<<b<<"\t"<<c <<"\n";
+ cout<<aa<<"\t"<<bb<<"\t"<<cc <<"\n";
+ cout<<aaa<<"\t"<<bbb<<"\t"<<ccc <<"\n";
+
+    
+
 
     return 0;
 }

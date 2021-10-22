@@ -1,0 +1,3 @@
+0- open commend line and 
+1- g++ main.cpp -o main.out
+2- ./main.out input.txt

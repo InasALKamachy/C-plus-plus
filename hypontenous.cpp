@@ -11,5 +11,6 @@ int main(){
  cin>>side2;
  
  cout<<"The square of hypotenous is : "<<sqrt(pow(side1,2)+pow(side2,2));
+ cin.get();
 }//(side1 * side1) + (side2 * side2)
  

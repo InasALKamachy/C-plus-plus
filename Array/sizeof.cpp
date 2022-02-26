@@ -26,3 +26,8 @@ for (int i=0; i<sizeof(myArray1);i++){
 }
 cin.get();
 }
+
+****************
+    //number of elements
+    cout<<sizeof(arr1)/sizeof(arr1[0])<<endl;
+    system("pause");

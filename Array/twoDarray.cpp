@@ -17,7 +17,7 @@ int main()
    int myArray[row][col] = {{1,2,3},{11,22,33},{222,333,444}};
    for (int i=0;i<=row;i++){
        for(int j=0;j<=col;j++){
- cout<<myArray[i][j]<<'|';
+ cout<<myArray[i][j]<<'|'; //or "\t"
        }
       cout<<endl;
        

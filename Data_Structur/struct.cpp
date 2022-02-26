@@ -33,3 +33,27 @@ int main()
 
     return 0;
 }
+**************************************
+
+// Online IDE - Code Editor, Compiler, Interpreter
+
+#include<iostream>
+
+using namespace std;
+
+typedef struct {
+    string name;
+    int phone;
+    float gpa;
+}Info;
+
+int main()
+{
+    Info _Info[0];
+    _Info[0].name = "enas";
+    _Info[0].phone = 5240558;
+    _Info[0].gpa = 3.8;
+    cout<<_Info[0].name<<endl;
+    cout<<sizeof(_Info[0].phone)<<endl;
+    return 0;
+}

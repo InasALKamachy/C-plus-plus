@@ -15,3 +15,18 @@ int main(){
 	system("pause");
 	return 0;
 }
+*****************************************
+#include<iostream>
+using namespace std;
+
+void cllre(int &x) {
+	x += 1;
+}
+
+int main(){
+	int x = 5;
+	cllre(x);
+	cout << x << endl;
+	system("pause");
+	return 0;
+}

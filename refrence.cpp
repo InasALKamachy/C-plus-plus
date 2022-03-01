@@ -30,3 +30,26 @@ int main(){
 	system("pause");
 	return 0;
 }
+
+
+******************************************************
+
+//with or without refrences::
+
+#include<iostream>
+using namespace std;
+
+void sum(int &x) {
+    
+    x +=1;
+    cout<<"\tlocation of function"<<&x<<endl;
+}
+int main() {
+	
+	int x=20;
+
+sum(x);
+cout<<x<<"\tlocation of main"<<&x<<endl;
+
+	return 0;
+}

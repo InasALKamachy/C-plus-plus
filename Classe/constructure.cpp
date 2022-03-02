@@ -5,25 +5,26 @@ class Rectangle {
 public:
 
     //define the properties
-    int height;
-    int width;
+
 
     // define the method
     int area();
-    void setval(int width, int height);
-    Rectangle();
+   
+    Rectangle(int width, int height);
     ~Rectangle();
+private:
+    int height;
+    int width;
 };
 //define the implementation
 int Rectangle::area() {
     int area = this->height * this->width;
     return area;
 }
-void Rectangle::setval(int a, int b) {
+
+Rectangle::Rectangle(int a, int b) {
     this->height = a;
     this->width = b;
-}
-Rectangle::Rectangle() {
     cout << "Hello this is the constructor helre" << endl;
     
 }
@@ -33,11 +34,17 @@ Rectangle::~Rectangle() {
 
 
 int main() {
-    int hieght_ = 80;
-    int width_ = 50;
+    { 
 
-    Rectangle R1;
-    R1.setval(80, 50);
+    Rectangle R1(80,22);
+   
     cout << R1.area() << endl;
+
+
+    Rectangle R2(55, 10);
+   
+    cout << R2.area() << endl;
+    }
+    system("pause");
     return 0;
 }

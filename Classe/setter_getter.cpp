@@ -32,3 +32,34 @@ int main() {
   cout<<myObj.getName();
   return 0;
 }
+////////////////////////////
+#include <iostream>
+using namespace std;
+
+class Time{
+    private:
+        int hour;
+        int minute;
+        int second;
+    public:
+        Time(int h,int m, int s){
+            hour = h;
+            minute = m;
+            second = s;
+                    }
+        void print(){
+            cout<<hour<<"/"<<minute<<"/"<<second<<endl;
+        }
+        void setHour(int h){
+            hour = h;
+        }
+        int getHour(){
+            return hour;
+        }
+};
+int main(){
+    Time t1(2,3,55);
+    t1.print();
+    t1.setHour(5);
+    t1.print();
+}

@@ -4,7 +4,13 @@ using namespace std;
 
 int main()
 {
-    int x = 1;
+
+    for(int x=1;x<=10;x++){
+        for(int y=1;y<=10;y++){
+            cout<<x<<"*"<<y<<"="<<x*y<<endl;
+        }
+    }
+   /* int x = 1;
 
     int result;
     while(x<=5){
@@ -16,7 +22,7 @@ int main()
         }
         x++;
 
-    }
+    }*/
 
     return 0;
 

@@ -26,5 +26,26 @@ int main()
 
 
 
+#include <iostream>
+using namespace std;
+
+#include<cstdlib>
+
+
+int main()
+{
+	char arr[6] ;
+	cin.get(arr, 6,'z');
+	cout << arr << endl;
+	
+
+	return 0;
+}
+
+
+
+
+
+
 
 

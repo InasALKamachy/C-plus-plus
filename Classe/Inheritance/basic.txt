@@ -1,0 +1,5 @@
+base class --->> derived class
+
+member private  /// same class
+member protected  // same and derived class
+member public  // any where

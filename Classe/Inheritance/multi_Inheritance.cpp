@@ -11,6 +11,7 @@ private:
 protected:
             name(){
     cout<<"HELLO FROM THE NAME CLASS\n";
+    strcpy(my_name, "no name");
     }
     name(char nn[]){
     cout<<"HELLOW FROM PARAMATRIZE CONSTURCTURE\n";
@@ -41,6 +42,7 @@ protected:
     }
 public:
         Id(){
+            id = 0;
     cout<<"HELLO FROM ID CLASS\n";
     }
 };
@@ -53,8 +55,9 @@ public:
     set_id(id1);
     }
     void show(){
-    get_name();
+
     get_id();
+    get_name();
     }
 };
 

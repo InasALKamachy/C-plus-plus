@@ -1,0 +1,28 @@
+//ios --> ostream istream fstream
+
+//ostream istream  **>>input output
+// ofstream ifstream  **>> FILES
+#include<iostream>
+#include<fstream> //File deals
+using namespace std;
+
+int main(){
+//create file
+int i;
+int a[10];
+int j = 0;
+for(int i=0;i<10;i++){
+   j=i*10;
+  a[i] = j;
+}
+ofstream writee("E:/eddew.txt", ios::binary);
+for(int i = 0;i<10;i++){
+    cout<<a[i]<<endl;
+    writee<<a[i]<<endl;
+
+}
+
+
+ writee.close();
+return 0;
+}

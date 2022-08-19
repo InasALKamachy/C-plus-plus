@@ -1,17 +1,36 @@
-//ios --> ostream istream fstream
-
-//ostream istream  **>>input output
-// ofstream ifstream  **>> FILES
-//create new txt file and write text in it
-#include<iostream>
-#include<fstream> //File deals
+/////////////////////////////////////////////////create new file and write in it:: 
+#include <iostream>
+#include<fstream>
+#include<string>
 using namespace std;
 
-int main(){
-//create file
-ofstream enasfile("E:/enas.txt");
-enasfile<<"Hello dfdfdFrom this new file"<<endl;
-enasfile.close();
+int main()
+{
+    ofstream write_file("write.txt");
+    if(write_file.is_open()){
+        write_file<<"This is the first line to write in file\n";
+        write_file.close();
+    }
+    else cout<<"could not open the fiel";
+    return 0;
+}
+///////////////////////////////////////////////////////////////
+//////////// open exist file and read it:: 
 
-return 0;
+#include <iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    string line;
+   ifstream write_file("write.txt");
+    if(write_file.is_open()){
+       while(getline(write_file, line)){
+           cout<<line<<"\n";
+       }
+    }
+    else cout<<"could not open the fiel";
+    return 0;
 }

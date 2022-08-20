@@ -1,0 +1,46 @@
+data structure: to manage and store data with efficiantly access and modification
+
+1- primitive DS : int , float , string, char, double, pointer
+2- not primitive DS: 
+2.a linear :: array, linked list, queue, stack
+2.b non- linear:: Graph, tree
+
+
+Complexity:: Time Space
+Time = [Ω Omege/best Case ,Θ theta/ average case, O big/worst case]
+
+Calculate Complexity::
+
+sum = 0;
+for(int i=0;i<5;i++) // n  --->> n(n+1)/2
+sum+=i;  //constant time =1
+N+1 ----> O(n) = Time Complexity
+
+
+O(1)< O(log n)<O(n)<O(n log n)< O(n2)<O(2n)<O(n!)
+***************************************************
+
+sum = 0; constant time = 1
+for(int i=0;i<5;i++){ n
+
+for(int i=0;i<5;i++) n  while nested loop n*n
+for(int i=0;i<5;i++) n 
+ 
+Time complexity = 1+n+n*n = 1+n+n2 ---> O(n2);
+***************************************************
+s = 0;  1
+for(int i=0;i<5;i=i*3) // while i is not i++ but it i=i*3 so it not n it will be log n
+
+Time Complexity = 1+log n --> O(log n)
+****************************************************
+s=1; 1
+for(int i=0;i<5;i=i*3)log n
+for(int i=0;i<5;i++) n 
+1+n+log n---> O(n log n)
+****************************************************
+for(int i=0;i<5;i++) n 
+for(int i=0;i<5;i++) n 
+for(int i=0;i<5;i=i*3)log n
+n*n*log n ---> n2*log n---> O(n2 log n)
+
+

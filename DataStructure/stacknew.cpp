@@ -40,7 +40,7 @@ else {
 void stack::show(){
 for(int i = top;i>=0;i--){
  cout<<"[";
-    cout<<arr[i]<<" ";
+    cout<<Max_size-i<<"::"<<arr[i]<<" ";
 cout<<"]";
 
 }

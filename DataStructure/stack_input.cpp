@@ -54,6 +54,15 @@ public:
     }
     cout<<"]";
     }
+    void get_top(){
+    if(top<0){
+        cout<<"empty"<<endl;
+    }
+    else{
+        int stackdd = arr[top];
+        cout<<"\n The Top is  "<<stackdd<<endl;
+    }
+    }
 };
 int main(){
     stack ob;
@@ -63,5 +72,6 @@ int main(){
     ob.pop();
     ob.pop();
     ob.show();
+    ob.get_top();
 return 0;
 }

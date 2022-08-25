@@ -42,6 +42,20 @@ public:
     length --;
         }
     }
+    void search(int x){
+        int po;
+    for(int i = front;i<=rear;i=(i+1)%Max_size){
+          if(arr[i] == x)
+          po = arr[i];
+    }
+      while(!po){
+        cout<<"not found"<<endl;
+        break;
+      }
+      cout<<"found"<<endl;
+   }
+
+
 
     bool isEmpty(){
     return length == 0;
@@ -87,9 +101,7 @@ ob.enQueu(1);
 ob.enQueu(2);
 ob.enQueu(6);
 ob.enQueu(8);
-for(int i=0;i<10;i++){
-    ob.enQueu(i);
-}
+ob.search(8);
 ob.show();
 cout<<"ddddddddddddddddddd"<<endl;
 

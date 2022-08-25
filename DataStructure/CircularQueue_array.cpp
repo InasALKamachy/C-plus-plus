@@ -2,19 +2,21 @@
 //FIFO  Vs LIFO
 #include <bits/stdc++.h>
 #include<iostream>
-#include <cassert>
-using namespace std;
 
-const int Max_size = 100;
+using namespace std;
+//const int Max_size = 100;
 class myQueue{
 
     int front, rear;
     int length;
-    int arr[Max_size];
+    int *arr;
+    int Max_size;
 
 public:
-    myQueue(){
+    myQueue(int size){
     cout<<"Your Queue has been created"<<endl;
+    arr = new int[abs(size)];
+    Max_size = abs(size);
     front = 0;
     rear = Max_size-1;
     length = 0;
@@ -80,15 +82,20 @@ public:
 
 int main()
 {
-myQueue ob;
+myQueue ob(1000000);
 ob.enQueu(1);
 ob.enQueu(2);
 ob.enQueu(6);
 ob.enQueu(8);
+for(int i=0;i<10;i++){
+    ob.enQueu(i);
+}
 ob.show();
 cout<<"ddddddddddddddddddd"<<endl;
-ob.deQueu();
+
 ob.show();
+cout<<ob.frontQueue()<<endl;
+cout<<ob.rearQueue()<<endl;
 
 return 0;
 

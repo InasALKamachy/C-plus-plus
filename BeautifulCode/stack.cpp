@@ -10,7 +10,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include<stack>
 #include<queue> 
 using namespace std;
-
+// library :: size, push, pop, empty, top
 void show(stack<int>s){
     
     while(!s.empty()){
